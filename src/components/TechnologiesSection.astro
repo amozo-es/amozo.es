@@ -15,22 +15,16 @@ const technologiesData = {
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 8v8m-4-8v8m8-8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
     },
     {
-      name: "React/Next.js",
-      level: 90,
+      name: "React",
+      level: 70,
       description: "Hooks, Context API, Next.js y React patterns",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-2.13.659-4.58.953-6.883.953-2.304 0-4.742-.294-6.883-.953a.402.402 0 0 0-.527.399c.015 1.511.035 2.908.09 4.31.011.294-.023.624-.035.93-.046 1.817-.081 3.565-.081 5.361 0 3.29 1.319 5.296 3.826 5.977a.401.401 0 0 1 .105.046c.411.117.883.199 1.395.199h2.4c.512 0 .984-.082 1.395-.199a.401.401 0 0 1 .105-.046c2.507-.681 3.826-2.687 3.826-5.977 0-1.796-.035-3.544-.081-5.361-.012-.306-.046-.636-.035-.93.055-1.402.075-2.799.09-4.31a.402.402 0 0 0-.527-.399z" fill="currentColor"/></svg>'
     },
     {
       name: "Astro",
-      level: 88,
+      level: 75,
       description: "SSG, islands architecture y optimización",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
-    },
-    {
-      name: "Vue.js",
-      level: 82,
-      description: "Vue 3, Composition API y Vuex",
-      icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     },
     {
       name: "Tailwind CSS",
@@ -43,7 +37,7 @@ const technologiesData = {
     {
       name: "Python",
       level: 92,
-      description: "Django, FastAPI, Flask y análisis de datos",
+      description: "FastAPI, Flask y análisis de datos",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1" fill="currentColor"/><rect x="14" y="3" width="7" height="7" rx="1" fill="currentColor"/><rect x="3" y="14" width="7" height="7" rx="1" fill="currentColor"/><rect x="14" y="14" width="7" height="7" rx="1" fill="currentColor"/></svg>'
     },
     {
@@ -53,12 +47,6 @@ const technologiesData = {
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 5h2v6h-2V7zm0 8h2v2h-2v-2z" fill="currentColor"/></svg>'
     },
     {
-      name: "Node.js/Express",
-      level: 85,
-      description: "REST APIs, middleware y Node.js ecosystem",
-      icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 12l10 5 10-5M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-    },
-    {
       name: "PHP",
       level: 80,
       description: "Laravel, Symfony, WordPress y desarrollo enterprise",
@@ -66,7 +54,7 @@ const technologiesData = {
     },
     {
       name: "Java",
-      level: 78,
+      level: 75,
       description: "Spring Boot, Android y aplicaciones empresariales",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     },
@@ -80,25 +68,25 @@ const technologiesData = {
     },
     {
       name: "PostgreSQL",
-      level: 85,
+      level: 75,
       description: "Consultas complejas, JSONB y optimización",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
     {
       name: "MongoDB",
-      level: 75,
+      level: 60,
       description: "NoSQL, aggregation pipeline y schema design",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
     {
       name: "Redis",
-      level: 82,
+      level: 80,
       description: "Caching, pub/sub y data structures",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
     {
       name: "SQLite",
-      level: 88,
+      level: 90,
       description: "Aplicaciones móviles y desarrollo local",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6v12a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2-2zm0 4h18v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     },
@@ -128,17 +116,11 @@ const technologiesData = {
       description: "Configuración, virtual hosts y optimización",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 9h6M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
     },
-    {
-      name: "AWS/Cloud",
-      level: 79,
-      description: "EC2, S3, RDS y servicios cloud básicos",
-      icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
-    },
   ],
   analytics: [
     {
       name: "Google Analytics/Ads",
-      level: 92,
+      level: 85,
       description: "GA4, Google Ads, Tag Manager y conversiones",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
@@ -154,14 +136,8 @@ const technologiesData = {
       description: "Pandas, NumPy, análisis estadístico y visualización",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
-    {
-      name: "Big Data",
-      level: 78,
-      description: "Apache Spark, procesamiento distribuido y ETL",
-      icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
-    },
-  ],
-  mobile: [
+  ]
+  /*mobile: [
     {
       name: "Android Development",
       level: 85,
@@ -180,7 +156,7 @@ const technologiesData = {
       description: "Service Workers, offline y mobile-first",
       icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/></svg>'
     },
-  ]
+  ]*/
 };
 
 const sections = [
@@ -214,12 +190,12 @@ const sections = [
     data: technologiesData.analytics,
     color: "text-pink-500",
   },
-  {
+  /*{
     title: "Mobile",
     icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="2" width="12" height="20" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>',
     data: technologiesData.mobile,
     color: "text-cyan-500",
-  },
+  },*/
 ];
 ---
 

@@ -58,6 +58,39 @@ const outreachData = [
   },
   {
     id: 6,
+    title: "Curso online UMA – Introducción a metodologías de investigación digital en Humanidades",
+    organization: "Universidad de Málaga - Cátedra Telefónica",
+    period: "2025",
+    description: "Profesor del módulo sobre visión por computador e inteligencia artificial generativa. Desarrollo de contenidos educativos para programa de formación online.",
+    type: "Formación Online",
+    category: "teaching",
+    link: "https://catedratelefonicauma.es/actividades/introduccion-investigacion-digital-humanidades/",
+    featured: false
+  },
+  {
+    id: 7,
+    title: "Proyecto formación TSAAI (Transversal Skills in Applied Artificial Intelligence)",
+    organization: "Proyecto Europeo Erasmus+",
+    period: "2024-2025",
+    description: "Desarrollo técnico de infraestructura educativa para proyecto europeo: sitio web, plataforma Moodle y administración de servidor. Responsable técnico de la plataforma.",
+    type: "Proyecto Europeo",
+    category: "institutional",
+    link: "",
+    featured: false
+  },
+  {
+    id: 8,
+    title: "Proyecto ESA SatNext V",
+    organization: "European Space Agency - Universidad de Málaga",
+    period: "2024",
+    description: "Utilización de modelos de lenguaje en comunicaciones por satélite. Colaboración internacional con American College of Greece en el marco del programa SatNext V.",
+    type: "Proyecto de Investigación",
+    category: "training",
+    link: "",
+    featured: false
+  },
+  {
+    id: 9,
     title: "Curso Marketing digital - WordPress & Posicionamiento en buscadores SEO",
     organization: "Universidad de Málaga - Titulaciones Propias",
     period: "2013 – Actualidad",
@@ -97,6 +130,12 @@ function getTypeColor(type) {
       return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
     case 'Formación Internacional':
       return 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200';
+    case 'Formación Online':
+      return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200';
+    case 'Proyecto Europeo':
+      return 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200';
+    case 'Proyecto de Investigación':
+      return 'bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-200';
     case 'Docencia Continua':
       return 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200';
     case 'Proyecto Divulgativo':

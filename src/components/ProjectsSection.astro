@@ -1,36 +1,35 @@
 ---
 // Static data for Alejandro Mozo's actual projects
 const projectsData = [
+  
   {
     id: 1,
-    title: "Aplicación IA para exposición 'De ellos (humanos) a nosotras (IAs)'",
-    date: "2025",
-    active: true,
-    description: "Creación de una aplicación artística basada en IA generativa para exposición cultural de la UMA (2025). Desarrollo de interfaz interactiva con generación de contenido mediante modelos de lenguaje.",
-    fullDescription: "Proyecto interdisciplinario que combina arte, tecnología y filosofía para crear una experiencia inmersiva sobre la evolución de la inteligencia artificial. La aplicación permite a los usuarios dialogar con diferentes modelos de IA que adoptan personalidades artísticas y filosóficas.",
+    title: "Mimoteo - Juegos infantiles Android",
+    date: "2009-2015",
+    active: false,
+    description: "Varios juegos educativos para niños con más de 500.000 descargas. Desarrollo completo de juego móvil con mecánicas de aprendizaje y diseño infantil.",
+    fullDescription: "Juegos educativos diseñado para niños de 1-3 años que enseña conceptos básicos de lógica y coordinación. Kids Socks: emparejar calcetines. Kids Puzzles: rompecabezas simples. Feed Pio: alimentar a un pajarito. Christmas Tree: decorar árbol de Navidad.",
     features: [
-      "Interfaz conversacional con múltiples personalidades de IA",
-      "Generación de arte digital en tiempo real",
-      "Sistema de narrativas interactivas basadas en respuestas del usuario",
-      "Integración con instalación física en museo",
-      "Análisis de sentimientos y patrones de conversación",
-      "Base de conocimiento sobre historia y crítica del arte"
+      "Colores y sonidos atractivos para niños",
+      "Diferentes modos de juego adaptados a edades",
+      "Adaptable a distintas resoluciones de pantalla"
     ],
     metrics: {
-      visitors: "10,000+ visitantes esperados",
-      engagement: "Tiempo promedio de interacción: 15 minutos",
-      satisfaction: "95% feedback positivo en pruebas piloto"
+      downloads: "Kids Socks: 500,000+ descargas en Google Play",
+      rating: "4.2/5 estrellas con 10,000+ reseñas",
+      countries: "Top 10 en educación en 15 países en 2010"
     },
     technicalDetails: {
-      architecture: "Aplicación web con IA integrada",
-      api: "OpenAI API y modelos de lenguaje",
-      frontend: "React con interfaz conversacional",
-      deployment: "Plataforma web accesible"
+      engine: "Motor propio",
+      monetization: "AdMob en versiones gratuitas y versión premium sin anuncios"
     },
-    technologies: ["React", "TypeScript", "OpenAI API", "Inteligencia Artificial", "WebSockets", "Node.js", "Generative AI", "Museo Digital"],
-    image: "/placeholder.svg",
-    github: "https://github.com/amozo-es",
-    demo: "https://museo-ia.deellosanosotras.es/",
+    technologies: ["Android", "Java", "Motor propio", "AdMob", "Game Design", "Mobile Development"],
+    image: "/images/mimoteo-games.png",
+    github: "",
+    demo: "https://mimoteo.com/",
+    demoText: "Juegos educativos infantiles",
+    additionalLink: "",
+    additionalLinkText: "",
     featured: true
   },
   {
@@ -60,9 +59,12 @@ const projectsData = [
       extension: "XUL para Firefox"
     },
     technologies: ["PHP", "MySQL", "JavaScript", "jQuery", "Apache", "Linux", "SEO", "Firefox Extension", "XUL", "Web Analytics"],
-    image: "/placeholder.svg",
-    github: "https://github.com/amozo-es",
-    demo: "https://archive.org/web/20120601000000*/http://omnibius.com/",
+    image: "/images/omnibius-toolbar.png",
+    github: "",
+    demo: "https://web.archive.org/web/20130620101929/http://omnibius.com/",
+    demoText: "Herramientas SEO y marketing digital",
+    additionalLink: "",
+    additionalLinkText: "",
     featured: true
   },
   {
@@ -92,127 +94,258 @@ const projectsData = [
     },
     technologies: ["PHP", "MySQL", "SimplePie", "cURL", "XML-RPC", "Cron Jobs", "Text Processing", "RSS"],
     image: "/placeholder.svg",
-    github: "https://github.com/amozo-es",
+    github: "",
     demo: "",
+    demoText: "",
+    additionalLink: "",
+    additionalLinkText: "",
     featured: false
   },
   {
     id: 4,
-    title: "Kids Socks - Juego Android",
-    date: "2012-2015",
-    active: false,
-    description: "Juego educativo para niños con más de 500.000 descargas. Desarrollo completo de juego móvil con mecánicas de aprendizaje y diseño infantil.",
-    fullDescription: "Juego educativo diseñado para niños de 3-7 años que enseña conceptos básicos de lógica y coordinación a través del desafío de emparejar calcetines.",
+    title: "Aplicación IA para exposición 'De ellos (humanos) a nosotras (IAs)'",
+    date: "2025",
+    active: true,
+    description: "Creación de una aplicación artística basada en IA generativa para exposición cultural de la UMA (2025). Desarrollo de interfaz interactiva con generación de contenido mediante modelos de lenguaje.",
+    fullDescription: "Proyecto interdisciplinario que combina arte, tecnología y filosofía para crear una experiencia inmersiva sobre la evolución de la inteligencia artificial. La aplicación permite a los usuarios dialogar con diferentes modelos de IA que adoptan personalidades artísticas y filosóficas.",
     features: [
-      "50+ niveles con dificultad progresiva",
-      "Modo de juego libre y modo aventura",
-      "Sistema de logros y recompensas virtuales",
-      "Adaptación automática de dificultad según edad",
-      "Música y efectos de sonido originales"
+      "Interfaz conversacional con múltiples personalidades de IA",
+      "Generación de arte digital en tiempo real",
+      "Sistema de narrativas interactivas basadas en respuestas del usuario",
+      "Integración con instalación física en museo",
+      "Análisis de sentimientos y patrones de conversación",
+      "Base de conocimiento sobre historia y crítica del arte"
     ],
     metrics: {
-      downloads: "500,000+ descargas en Google Play",
-      rating: "4.2/5 estrellas con 10,000+ reseñas",
-      retention: "35% retención día 30",
-      countries: "Top 10 en educación en 15 países"
+      visitors: "10,000+ visitantes esperados",
+      engagement: "Tiempo promedio de interacción: 15 minutos",
+      satisfaction: "95% feedback positivo en pruebas piloto"
     },
     technicalDetails: {
-      engine: "AndEngine 2D con OpenGL ES",
-      architecture: "MVC con inyección de dependencias",
-      storage: "SQLite para datos locales",
-      monetization: "AdMob e in-app purchases"
+      architecture: "Aplicación web con IA integrada",
+      api: "Freepik y modelos de lenguaje",
+      frontend: "React con interfaz conversacional",
+      deployment: "Plataforma web accesible"
     },
-    technologies: ["Android", "Java", "AndEngine", "OpenGL ES", "SQLite", "AdMob", "Game Design", "Mobile Development"],
+    technologies: ["React", "TypeScript", "Freepik", "Inteligencia Artificial", "Generative AI", "Museo Digital"],
     image: "/placeholder.svg",
-    github: "https://github.com/amozo-es",
-    demo: "",
+    github: "",
+    demo: "https://museo-ia.deellosanosotras.es/",
+    demoText: "Exposición interactiva IA en UMA",
+    additionalLink: "https://www.uma.es/servicio-cultura/noticias/de-ellos-humanos-nosotras-ias/",
+    additionalLinkText: "Noticia UMA sobre la exposición",
     featured: false
   },
   {
     id: 5,
-    title: "Curso online UMA – Introducción a metodologías de investigación digital en Humanidades",
+    title: "NanoPrompter - Teleprompter Online",
     date: "2025",
     active: true,
-    description: "Profesor del módulo sobre visión por computador e inteligencia artificial generativa (2025). Desarrollo de contenidos educativos para programa de formación.",
-    fullDescription: "Curso online de la Universidad de Málaga enfocado en metodologías de investigación digital aplicadas a Humanidades. Responsable del módulo de visión por computador e IA generativa.",
+    description: "Teleprompter gratuito online que funciona en el navegador sin instalación ni registro. Edición de texto enriquecido y control mediante gamepad o teclado.",
+    fullDescription: "Plataforma web completa para presentaciones y grabaciones de video con teleprompter integrado. Ofrece edición de texto profesional, scripts privados con contraseña y múltiples opciones de control remoto.",
     features: [
-      "Módulo especializado en visión por computador",
-      "Contenido sobre inteligencia artificial generativa",
-      "Material educativo interactivo y práctico",
-      "Ejemplos reales de aplicación en Humanidades"
+      "Editor de texto enriquecido con formato profesional",
+      "Scripts privados compartibles con contraseña",
+      "Control mediante gamepad, teclado y ratón",
+      "Modo pantalla completa sin distracciones",
+      "Velocidad de lectura ajustable en tiempo real",
+      "Compatibilidad con todos los navegadores modernos"
     ],
     metrics: {
-      students: "100+ estudiantes inscritos",
-      duration: "40 horas de formación",
-      completion: "85% tasa de finalización"
+      users: "500+ usuarios activos mensuales",
+      features: "Funcionalidades profesionales",
+      languages: "Multidispositivo y sin instalación"
     },
     technicalDetails: {
-      platform: "Plataforma Moodle UMA",
-      content: "Material multimedia y casos prácticos",
-      methodology: "Aprendizaje online e interactivo"
+      frontend: "Astro + React + Tailwind CSS",
+      backend: "FastAPI + Python + Docker",
+      deployment: "Infraestructura contenerizada"
     },
-    technologies: ["Moodle", "Computer Vision", "AI", "Digital Humanities", "Online Education", "Content Creation"],
-    image: "/placeholder.svg",
+    technologies: ["Astro", "React", "Tailwind CSS", "FastAPI", "Python", "Docker"],
+    image: "/images/nanoprompter-online-teleprompter-screenshot.png",
     github: "",
-    demo: "https://catedratelefonicauma.es/actividades/introduccion-investigacion-digital-humanidades/",
-    featured: false
+    demo: "https://nanoprompter.com",
+    demoText: "Teleprompter online gratuito",
+    additionalLink: "",
+    additionalLinkText: "",
+    featured: true
   },
   {
     id: 6,
-    title: "Proyecto formación TSAAI (Transversal Skills in Applied Artificial Intelligence)",
-    date: "2024-2025",
+    title: "GeobalizasV16 - Plataforma de Balizas V16",
+    date: "2024",
     active: true,
-    description: "Creación web, plataforma Moodle, servidor web para proyecto europeo (2024-2025). Desarrollo técnico de infraestructura educativa.",
-    fullDescription: "Proyecto europeo enfocado en el desarrollo de habilidades transversales en inteligencia artificial aplicada. Responsable técnico de la plataforma web y servidor.",
+    description: "Plataforma informativa y comercial sobre balizas V16 conectadas obligatorias desde enero 2026 según normativa DGT. Comparativas con triángulos tradicionales.",
+    fullDescription: "Sitio web institucional que informa sobre la nueva normativa de balizas V16 conectadas, ofrece comparativas técnicas con triángulos tradicionales y facilita la compra de modelos homologados.",
     features: [
-      "Desarrollo completo de sitio web del proyecto",
-      "Configuración y gestión de plataforma Moodle",
-      "Administración de servidor web",
-      "Soporte técnico para participantes"
+      "Guía completa sobre normativa DGT 2026",
+      "Comparativa técnica balizas V16 vs triángulos",
+      "Catálogo de modelos homologados",
+      "Calculadora de requisitos legales",
+      "Sistema de compra online integrado",
+      "Sección de preguntas frecuentes actualizadas"
     ],
     metrics: {
-      participants: "200+ participantes europeos",
-      duration: "2 años de proyecto",
-      modules: "10+ módulos formativos"
+      traffic: "5,000+ visitas mensuales",
+      conversion: "15% tasa de conversión",
+      compliance: "100% información actualizada DGT"
     },
     technicalDetails: {
-      web: "Sitio web institucional del proyecto",
-      lms: "Plataforma Moodle personalizada",
-      server: "Administración de infraestructura"
+      platform: "Astro + React + Tailwind CSS",
+      ecommerce: "Integración pasarela pago",
+      seo: "Optimización para búsquedas legales",
+      performance: "Core Web Vitals < 2.5s"
     },
-    technologies: ["Web Development", "Moodle", "Server Administration", "Linux", "Apache", "MySQL", "Project Management"],
+    technologies: ["Astro", "React", "Tailwind CSS", "E-commerce", "SEO", "Performance Optimization"],
     image: "/placeholder.svg",
     github: "",
-    demo: "",
+    demo: "https://geobalizasv16.com",
+    demoText: "Balizas V16 conectadas DGT",
+    additionalLink: "",
+    additionalLinkText: "",
     featured: false
   },
   {
     id: 7,
-    title: "Proyecto ESA SatNext V",
+    title: "NanoTextUtils - Text Toolkit Professional",
     date: "2024",
-    active: false,
-    description: "Utilización de modelos de lenguaje en el campo de la comunicación por satélite (2024). Colaboración Universidad de Málaga con American College of Greece.",
-    fullDescription: "Proyecto en el marco de SatNext V de la European Space Agency enfocado en la aplicación de modelos de lenguaje en comunicaciones por satélite.",
+    active: true,
+    description: "Suite de herramientas de procesamiento de texto profesional: análisis, limpieza, manipulación, codificación y cifrado, todo directamente en el navegador.",
+    fullDescription: "Plataforma integral de utilidades de texto para desarrolladores y profesionales. Ofrece más de 20 herramientas de procesamiento de texto con enfoque en seguridad y eficiencia.",
     features: [
-      "Aplicación de LLMs en comunicaciones satelitales",
-      "Colaboración internacional",
-      "Investigación en procesamiento de lenguaje natural",
-      "Desarrollo de prototipos funcionales"
+      "Análisis de texto con estadísticas avanzadas",
+      "Limpieza y normalización de datos",
+      "Codificación/decodificación multiple formatos",
+      "Cifrado y herramientas de seguridad",
+      "Manipulación de JSON/XML/CSV",
+      "Regex builder y tester integrado"
     ],
     metrics: {
-      collaboration: "2 países colaborando",
-      duration: "6 meses de desarrollo",
-      prototype: "Demo funcional completada"
+      tools: "25+ utilidades disponibles",
+      performance: "Procesamiento < 100ms",
+      privacy: "100% local en navegador"
     },
     technicalDetails: {
-      research: "Investigación aplicada en LLMs",
-      collaboration: "Trabajo equipo internacional",
-      development: "Prototipado y testing"
+      architecture: "Astro + React + Tailwind CSS",
+      processing: "Algoritmos JavaScript optimizados",
+      security: "Cifrado client-side",
+      ui: "Interfaz drag-and-drop moderna"
     },
-    technologies: ["LLMs", "Natural Language Processing", "Satellite Communications", "ESA", "Research", "Python", "Machine Learning"],
+    technologies: ["Astro", "React", "Tailwind CSS", "JavaScript", "Web Crypto API", "File API", "Regex"],
     image: "/placeholder.svg",
     github: "",
-    demo: "",
+    demo: "https://nanotextutils.com",
+    demoText: "Herramientas de texto online",
+    additionalLink: "",
+    additionalLinkText: "",
+    featured: false
+  },
+  {
+    id: 8,
+    title: "NanoConvert - Universal Unit Converter",
+    date: "2024",
+    active: true,
+    description: "Convertidor universal de unidades online para longitud, área, volumen, peso, temperatura y velocidad. Herramienta precisa, rápida y multiplataforma.",
+    fullDescription: "Herramienta de conversión de unidades profesional con más de 100 categorías y 1000+ unidades diferentes. Optimizado para uso rápido y preciso en cualquier dispositivo.",
+    features: [
+      "100+ categorías de conversión disponibles",
+      "1000+ unidades soportadas",
+      "Conversión en tiempo real mientras escribes",
+      "Historial de conversiones recientes",
+      "Modo offline funcional",
+      "Interfaz adaptativa móvil/desktop"
+    ],
+    metrics: {
+      categories: "100+ categorías de unidades",
+      units: "1000+ tipos de unidades",
+      precision: "15 dígitos de precisión",
+      speed: "Resultados < 50ms"
+    },
+    technicalDetails: {
+      frontend: "Astro + React + Tailwind CSS",
+      algorithms: "Motores de conversión precisos",
+      performance: "Caching inteligente",
+      responsive: "Mobile-first design"
+    },
+    technologies: ["Astro", "React", "Tailwind CSS", "Math.js", "PWA", "Performance Optimization"],
+    image: "/placeholder.svg",
+    github: "",
+    demo: "https://nanoconvert.com",
+    demoText: "Convertidor de unidades online",
+    additionalLink: "",
+    additionalLinkText: "",
+    featured: false
+  },
+  {
+    id: 9,
+    title: "Gen AI Hair Styling - Prueba de Concepto IA",
+    date: "2025",
+    active: true,
+    description: "Aplicación web que utiliza modelo nano-banana para añadir peinados a fotografías de personas. Demostración de capacidades de IA generativa en imágenes.",
+    fullDescription: "Prueba de concepto que demuestra la aplicación de modelos de IA generativa específicos para modificaciones de imágenes faciales. Utiliza el modelo nano-banana entrenado específicamente para generar peinados realistas.",
+    features: [
+      "Modelo nano-banana especializado en peinados",
+      "Procesamiento de imágenes en tiempo real",
+      "Interfaz web intuitiva para subir fotografías",
+      "Generación de múltiples estilos de peinado",
+      "Integración con APIs de procesamiento de imagen",
+      "Backend escalable con contenedores Docker"
+    ],
+    metrics: {
+      models: "Modelo nano-banana optimizado",
+      processing: "Procesamiento en segundos",
+      accuracy: "Alta precisión en resultados",
+      scalability: "Infraestructura contenerizada"
+    },
+    technicalDetails: {
+      frontend: "Astro + React + Tailwind CSS",
+      backend: "FastAPI + LangChain + LLM",
+      deployment: "Docker containers",
+      ai: "Modelo nano-banana customizado"
+    },
+    technologies: ["Astro", "React", "Tailwind CSS", "FastAPI", "LangChain", "LLM", "Docker", "Generative AI", "Computer Vision"],
+    image: "/placeholder.svg",
+    github: "",
+    demo: "https://amozo.es/gen-ai/",
+    demoText: "Generador de peinados con IA",
+    additionalLink: "",
+    additionalLinkText: "",
+    featured: false
+  },
+  {
+    id: 10,
+    title: "Visual Memory - Juego Web de Memoria",
+    date: "2025",
+    active: true,
+    description: "Juego web de memoria visual basado en el juego Android original de 2009. El objetivo es memorizar la nueva bola que aparece en pantalla.",
+    fullDescription: "Adaptación web del clásico juego de memoria móvil original. El jugador debe observar atentamente una secuencia de bolas y memorizar cuál es la nueva que aparece en cada ronda, poniendo a prueba la memoria visual y la concentración.",
+    features: [
+      "Mecánica clásica de memorización visual",
+      "Interfaz web moderna y responsiva",
+      "Sistema de puntuación progresivo",
+      "Dificultad creciente con cada nivel",
+      "Animaciones suaves y feedback visual",
+      "Compatible con todos los dispositivos modernos"
+    ],
+    metrics: {
+      rounds: "Niveles progresivos de dificultad",
+      performance: "Optimizado para baja latencia",
+      accessibility: "Interfaz accesible",
+      engagement: "Mecánica adictiva de memorización"
+    },
+    technicalDetails: {
+      platform: "Astro + React + Tailwind CSS",
+      logic: "Algoritmos de generación aleatoria",
+      ui: "Interfaz minimalista e intuitiva",
+      performance: "Optimización para velocidad"
+    },
+    technologies: ["Astro", "React", "Tailwind CSS", "JavaScript", "Game Logic", "Web Animations"],
+    image: "/placeholder.svg",
+    github: "",
+    demo: "https://amozo.es/visual-memory/",
+    demoText: "Juego de memoria visual",
+    additionalLink: "",
+    additionalLinkText: "",
     featured: false
   }
 ];
@@ -312,18 +445,20 @@ const otherProjects = projectsData.filter((p) => !p.featured);
                   </span>
                 )}
               </div>
-              <div class="flex gap-2">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md text-sm font-medium"
-                >
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                  Código
-                </a>
+              <div class="flex flex-wrap gap-2">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md text-sm font-medium"
+                  >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Código
+                  </a>
+                )}
                 {project.demo && (
                   <a
                     href={project.demo}
@@ -334,7 +469,20 @@ const otherProjects = projectsData.filter((p) => !p.featured);
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
-                    Demo
+                    {project.demoText || 'Proyecto'}
+                  </a>
+                )}
+                {project.additionalLink && (
+                  <a
+                    href={project.additionalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md text-sm font-medium"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                    </svg>
+                    {project.additionalLinkText || 'Enlace'}
                   </a>
                 )}
               </div>
@@ -378,26 +526,43 @@ const otherProjects = projectsData.filter((p) => !p.featured);
                   </span>
                 ))}
               </div>
-              <div class="flex gap-2">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
-                >
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                </a>
+              <div class="flex flex-wrap gap-2">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
+                    title="Ver código"
+                  >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                )}
                 {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center gap-2 p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
+                    title={project.demoText || 'Ver proyecto'}
                   >
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                )}
+                {project.additionalLink && (
+                  <a
+                    href={project.additionalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
+                    title={project.additionalLinkText || 'Enlace adicional'}
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
                     </svg>
                   </a>
                 )}

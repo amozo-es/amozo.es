@@ -21,7 +21,7 @@ const experienceData = [
       "Mantenimiento de alta calidad en la docencia universitaria"
     ],
     technologies: ["Moodle", "Microsoft Teams", "Sistemas de gestión académica", "Herramientas de evaluación online", "Plataformas educativas virtuales"],
-    logo: "/abstract-tech-logo.png",
+    logo: "/images/uma-logo.png",
     featured: true
   },
   {
@@ -302,11 +302,28 @@ const otherExperiences = experienceData.filter((exp) => !exp.featured);
             <div class="mb-4">
               <div class="flex items-start gap-4">
                 <div class="relative w-16 h-16 rounded-lg overflow-hidden bg-muted flex-shrink-0">
-                  <img
-                    src={exp.logo}
-                    alt={`${exp.company} logo`}
-                    class="w-full h-full object-cover"
-                  />
+                  {exp.logo && exp.logo.trim() !== '' ? (
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      class="w-full h-full object-cover"
+                      onerror={`this.style.display='none'; this.nextElementSibling.style.display='flex';`}
+                    />
+                  ) : null}
+                  <svg
+                    class={`w-full h-full ${exp.logo && exp.logo.trim() !== '' ? 'hidden' : 'flex'} items-center justify-center`}
+                    viewBox="0 0 64 64"
+                    fill="none"
+                  >
+                    <rect width="64" height="64" rx="8" fill="currentColor" fill-opacity="0.1"/>
+                    <rect x="12" y="12" width="40" height="40" rx="6" fill="currentColor" fill-opacity="0.2"/>
+                    <path
+                      d="M24 28h16v4h-16v-4zm0 8h16v4h-16v-4zm0-16h16v4h-16v-4z"
+                      fill="currentColor"
+                      fill-opacity="0.6"
+                    />
+                    <circle cx="32" cy="48" r="2" fill="currentColor" fill-opacity="0.4"/>
+                  </svg>
                 </div>
                 <div class="flex-1">
                   <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
@@ -372,11 +389,28 @@ const otherExperiences = experienceData.filter((exp) => !exp.featured);
               <div class="mb-4">
                 <div class="flex items-start gap-4">
                   <div class="relative w-16 h-16 rounded-lg overflow-hidden bg-muted flex-shrink-0">
-                    <img
-                      src={exp.logo}
-                      alt={`${exp.company} logo`}
-                      class="w-full h-full object-cover"
-                    />
+                    {exp.logo && exp.logo.trim() !== '' ? (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        class="w-full h-full object-cover"
+                        onerror={`this.style.display='none'; this.nextElementSibling.style.display='flex';`}
+                      />
+                    ) : null}
+                    <svg
+                      class={`w-full h-full ${exp.logo && exp.logo.trim() !== '' ? 'hidden' : 'flex'} items-center justify-center`}
+                      viewBox="0 0 64 64"
+                      fill="none"
+                    >
+                      <rect width="64" height="64" rx="8" fill="currentColor" fill-opacity="0.1"/>
+                      <rect x="12" y="12" width="40" height="40" rx="6" fill="currentColor" fill-opacity="0.2"/>
+                      <path
+                        d="M24 28h16v4h-16v-4zm0 8h16v4h-16v-4zm0-16h16v4h-16v-4z"
+                        fill="currentColor"
+                        fill-opacity="0.6"
+                      />
+                      <circle cx="32" cy="48" r="2" fill="currentColor" fill-opacity="0.4"/>
+                    </svg>
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">

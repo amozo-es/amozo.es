@@ -1,27 +1,108 @@
 ---
 // src/components/Header.astro
-// No se necesitan props para este header básico por ahora
-// Pero podrías añadir un título si quieres: export interface Props { siteTitle?: string; }
-// const { siteTitle } = Astro.props;
+// Componente Header con navegación integrada
 ---
+
 <header class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-background/75 dark:bg-dark-background/75">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <!-- Izquierda del Header: Puedes poner un logo o título del sitio si quieres -->
-        <div class="flex-shrink-0">
-          <a href="/" class="text-2xl font-bold text-accent-green-DEFAULT dark:text-accent-green-light hover:opacity-80 transition-opacity">
-            Alejandro Mozo
-          </a>
-        </div>
-  
-        <!-- Derecha del Header: Aquí va el ThemeToggle -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo/Título -->
+      <div class="flex-shrink-0">
+        Alejandro Mozo Quesada
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#education" class="text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors">
+          Educación
+        </a>
+        <a href="#experience" class="text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors">
+          Experiencia
+        </a>
+        <a href="#projects" class="text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors">
+          Proyectos
+        </a>
+        <a href="#technologies" class="text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors">
+          Tecnologías
+        </a>
+        <a href="#contact" class="text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle & Theme Toggle -->
+      <div class="flex items-center space-x-2">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden p-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+          aria-label="Toggle navigation menu"
+        >
+          <svg id="menu-icon" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="h-5 w-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
         <div class="flex items-center">
           <slot /> <!-- Aquí es donde se renderizará <ThemeToggle client:load /> -->
         </div>
       </div>
     </div>
-  </header>
-  
-  <style>
-    
-  </style>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden py-4 border-t border-border">
+      <div class="flex flex-col space-y-2">
+        <a href="#education" class="mobile-nav-link text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors py-2">
+          Educación
+        </a>
+        <a href="#experience" class="mobile-nav-link text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors py-2">
+          Experiencia
+        </a>
+        <a href="#projects" class="mobile-nav-link text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors py-2">
+          Proyectos
+        </a>
+        <a href="#technologies" class="mobile-nav-link text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors py-2">
+          Tecnologías
+        </a>
+        <a href="#contact" class="mobile-nav-link text-sm font-medium text-foreground hover:text-accent-green-DEFAULT dark:text-dark-foreground dark:hover:text-accent-green-light transition-colors py-2">
+          Contacto
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  mobileMenuToggle?.addEventListener('click', () => {
+    const isHidden = mobileMenu?.classList.contains('hidden');
+    if (isHidden) {
+      mobileMenu?.classList.remove('hidden');
+      menuIcon?.classList.add('hidden');
+      closeIcon?.classList.remove('hidden');
+    } else {
+      mobileMenu?.classList.add('hidden');
+      menuIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+    }
+  });
+
+  // Close mobile menu when clicking on navigation links
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+      menuIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+    });
+  });
+</script>
