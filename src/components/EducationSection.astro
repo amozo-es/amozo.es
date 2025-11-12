@@ -1,0 +1,156 @@
+---
+// Static data for Alejandro Mozo's actual education
+const educationData = [
+  {
+    id: 1,
+    institution: "Universidad de Málaga",
+    degree: "Doctorado en Tecnologías Informáticas",
+    period: "2013 - En curso",
+    description: "Investigación en inteligencia artificial, línea principal en grandes modelos de lenguaje (LLM) y su evaluación. Tesis doctoral centrada en el análisis y mejora de sistemas de IA generativa.",
+    achievements: [
+      "Investigación en grupo de IA de la UMA",
+      "Participación en proyectos de análisis de imágenes y Big Data",
+      "Colaboración internacional con Jožef Stefan Institute (Eslovenia)",
+      "Proyecto ESA SatNext V sobre modelos de lenguaje en comunicaciones por satélite",
+      "Desarrollo de framework de evaluación para LLMs"
+    ],
+    courses: [
+      "ERASMUS+ KA 131 - Jožef Stefan Institute (Eslovenia) - 40 horas (2024)",
+      "Formación en visión por computador e IA generativa",
+      "Metodologías de investigación en Computer Science",
+      "Análisis de datos y Machine Learning avanzado"
+    ],
+    status: "En curso",
+  },
+  {
+    id: 2,
+    institution: "Universidad de Málaga",
+    degree: "Ingeniero en Informática",
+    period: "1998 - 2001",
+    description: "Formación integral en ingeniería informática y sistemas de computación. Especialización en desarrollo de software, arquitectura de sistemas y bases de datos. Proyecto fin de carrera en sistemas de gestión de contenido web.",
+    achievements: [
+      "Proyecto fin de carrera enfocado en desarrollo web",
+      "Formación en Lenguajes y Sistemas Informáticos",
+      "Base sólida en programación y desarrollo de software",
+      "Conocimientos en redes y sistemas informáticos"
+    ],
+    courses: [
+      "Lenguajes y Sistemas Informáticos",
+      "Ingeniería del Software",
+      "Bases de Datos y Sistemas de Información",
+      "Redes y Comunicaciones",
+      "Inteligencia Artificial Fundamentos"
+    ],
+    status: "Graduado",
+  },
+  {
+    id: 3,
+    institution: "Universidad de Málaga - Titulaciones Propias",
+    degree: "Profesor de Marketing Digital y SEO",
+    period: "2013 - Actualidad",
+    description: "Profesor de cursos de titulaciones propias de la UMA especializados en Marketing digital, WordPress y Posicionamiento en buscadores SEO.",
+    achievements: [
+      "Profesor especializado en marketing digital y SEO",
+      "Formación continua en tecnologías web",
+      "Actualización constante en algoritmos de buscadores",
+      "Experiencia práctica en proyectos reales"
+    ],
+    courses: [
+      "Marketing Digital - WordPress & Posicionamiento en buscadores SEO",
+      "Desarrollo Web con CMS",
+      "Estrategias de SEO y SEM",
+      "Análisis Digital y Métricas"
+    ],
+    status: "Profesor",
+  }
+];
+---
+
+<section id="education" class="py-20 bg-muted/30">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold font-heading mb-4">Formación Académica</h2>
+      <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Mi trayectoria educativa y especialización en tecnologías informáticas
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
+
+        {educationData.map((edu, index) => (
+          <div
+            key={edu.id}
+            class="relative flex items-start mb-12 animate-slide-up"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <!-- Timeline dot -->
+            <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+
+            <div class="ml-20 w-full">
+              <div class="card hover:shadow-lg transition-shadow duration-300 rounded-lg border border-border bg-card p-6">
+                <div class="mb-4">
+                  <div class="flex items-start justify-between">
+                    <div>
+                      <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path>
+                        </svg>
+                        {edu.degree}
+                      </h3>
+                      <p class="text-lg font-semibold text-primary">{edu.institution}</p>
+                      <p class="text-muted-foreground">{edu.period}</p>
+                    </div>
+                    <span class={`px-2 py-1 rounded-md text-sm ${
+                      edu.status === "Graduado" || edu.status === "Finalizado"
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-secondary text-secondary-foreground"
+                    }`}>
+                      {edu.status}
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-muted-foreground leading-relaxed mb-4">{edu.description}</p>
+
+                  {edu.achievements && (
+                    <div class="mb-4">
+                      <h4 class="font-semibold mb-2 text-sm text-foreground">Logros destacados:</h4>
+                      <ul class="list-disc list-inside text-sm text-muted-foreground space-y-1">
+                        {edu.achievements.map((achievement, idx) => (
+                          <li key={idx}>{achievement}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {edu.courses && (
+                    <div>
+                      <h4 class="font-semibold mb-2 text-sm text-foreground">Cursos relevantes:</h4>
+                      <div class="flex flex-wrap gap-2">
+                        {edu.courses.slice(0, 4).map((course, idx) => (
+                          <span key={idx} class="px-2 py-1 bg-secondary text-secondary-foreground rounded-md text-xs">
+                            {course}
+                          </span>
+                        ))}
+                        {edu.courses.length > 4 && (
+                          <span class="px-2 py-1 bg-primary/10 text-primary rounded-md text-xs">
+                            +{edu.courses.length - 4} más
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,7 +1,4 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import ThemeToggle from '../components/ThemeToggle.astro'; // Importar el toggle
 import '../styles/global.css'; // Importa estilos globales
 
 interface Props {
@@ -11,16 +8,6 @@ interface Props {
 
 const { title, description = "Alejandro Mozo, página personal" } = Astro.props;
 
-const contactInfo = {
-  email: "hola@amozo.es",
-  phone: "",
-  location: "Málaga, España",
-  socials: [
-    { name: "LinkedIn", url: "#", icon: "linkedin-icon.svg" }, // Reemplaza con SVGs reales o usa una librería
-    { name: "GitHub", url: "#", icon: "github-icon.svg" },
-    { name: "Twitter", url: "#", icon: "twitter-icon.svg" },
-  ]
-};
 ---
 
 <!doctype html>
@@ -57,12 +44,6 @@ const contactInfo = {
   </script>
 </head>
 <body class="bg-background dark:bg-dark-background text-foreground dark:text-dark-foreground font-sans transition-colors duration-300">
-  <Header>
-    <ThemeToggle />
-  </Header>
-  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-8xl">
     <slot />
-  </main>
-  <Footer />
 </body>
 </html>

@@ -1,0 +1,13 @@
+---
+// Astro theme provider component
+// This component is now handled by the Layout.astro file
+// The theme functionality is implemented directly in the layout's head section
+
+interface Props {
+  children?: any;
+}
+
+const { children } = Astro.props;
+---
+
+<slot />

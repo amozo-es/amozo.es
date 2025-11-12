@@ -1,39 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TimelineSection from '../components/TimelineSection.astro';
-// import TechStackSection from '../components/TechStackSection.astro';
-// import ProjectsSection from '../components/ProjectsSection.astro';
+import HeroSection from '../components/HeroSection.astro';
+import Navigation from '../components/Navigation.astro';
+import EducationSection from '../components/EducationSection.astro';
+import ExperienceSection from '../components/ExperienceSection.astro';
+import ProjectsSection from '../components/ProjectsSection.astro';
+import OutreachSection from '../components/OutreachSection.astro';
+import TechnologiesSection from '../components/TechnologiesSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 
-// Datos de ejemplo (podrías cargarlos desde JSON/MD)
-const educationData = [
-  { id: 1, date: "2018 - 2022", title: "Grado en Ingeniería Informática", subtitle: "Universidad Ficticia", description: "Especialización en desarrollo de software y sistemas inteligentes.", image: "/images/milestone-uni.png" },
-  { id: 2, date: "2023", title: "Curso Avanzado de Astro y Tailwind", subtitle: "Escuela Online de Élite", description: "Profundización en desarrollo web moderno y full-stack.", image: "/images/milestone-curso.png" },
-];
-
-const experienceData = [
-  { id: 1, date: "2022 - Presente", title: "Desarrollador Frontend", subtitle: "Tech Solutions Inc.", description: "Creación de interfaces interactivas y responsivas para clientes globales.", image: "/images/milestone-job.png" },
-  { id: 2, date: "2021 - 2022", title: "Becario de Desarrollo Web", subtitle: "Startup Innovadora", description: "Soporte en el desarrollo y mantenimiento de la plataforma web principal.", image: "/images/milestone-intern.png" },
-];
-
-// TODO: Datos para tecnologías y proyectos
+// Actualizar la información para que refleje a Alejandro Mozo
 ---
-<Layout title="Mi Portfolio Personal">
+
+<Layout title="Portfolio Personal - Alejandro Mozo">
+  <Navigation />
   <div class="space-y-16 md:space-y-24">
-    <section id="hero" class="text-center py-16">
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
-        Hola, soy <span class="text-accent-green dark:text-accent-green-light">Alejandro Mozo</span>
-      </h1>
-      <p class="text-xl md:text-2xl text-muted-foreground dark:text-dark-muted-foreground max-w-2xl mx-auto">
-        Ingeniero en Informática. Profesor Sustituto en la Universidad de Málaga. Desarrollador desde más de 25 años.
-      </p>
-    </section>
-
-    <TimelineSection title="Educación" items={educationData} accentColorClass="text-accent-green dark:text-accent-green-light" />
-    <TimelineSection title="Experiencia Profesional" items={experienceData} accentColorClass="text-accent-purple dark:text-accent-purple-light" />
-
-    <!--
-    <TechStackSection />
+    <HeroSection />
+    <EducationSection />
+    <ExperienceSection />
     <ProjectsSection />
-    -->
+    <OutreachSection />
+    <TechnologiesSection />
+    <ContactSection />
   </div>
 </Layout>
