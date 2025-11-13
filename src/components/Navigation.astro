@@ -117,7 +117,22 @@ const navItems = [
     const targetId = href.substring(1);
     const element = document.getElementById(targetId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Calculate offset for fixed header
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      // Use smooth scroll with fallback for better compatibility
+      if ('scrollBehavior' in document.documentElement.style) {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        // Fallback for browsers that don't support smooth scrolling
+        window.scrollTo(0, offsetPosition);
+      }
+
       // Close mobile menu if open
       mobileMenu?.classList.add('hidden');
       menuIcon?.classList.remove('hidden');

@@ -134,9 +134,19 @@
   /* Added smooth scrolling and custom animations */
   html {
     scroll-behavior: smooth;
-    /* Suppress theme transition on page load */
-    &.no-transition * {
-      transition: none !important;
+    /* Ensure smooth scrolling works across all browsers */
+    scroll-padding-top: 5rem; /* Account for fixed header */
+  }
+
+  /* Suppress theme transition on page load */
+  html.no-transition * {
+    transition: none !important;
+  }
+
+  /* Alternative smooth scroll for better browser compatibility */
+  @supports not (scroll-behavior: smooth) {
+    html {
+      scroll-behavior: auto;
     }
   }
 
